@@ -1,0 +1,74 @@
+// /* Стили для подложки */
+
+/* Стили для модальных окон */
+
+.modal.location {
+  max-width: 440px;
+  overflow-y: auto;
+  @media screen and (min-width: 768px) {
+    max-width: 568px;
+    width: 568px;
+    padding: 32px 60px;
+  }
+}
+
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: #444;
+  cursor: $pointer;
+}
+
+.modal-location__title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #131313;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+  }
+}
+.modal-location__img {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+.modal-location__btn {
+  display: inline-block;
+  width: 134px;
+  background: #f8d24e;
+  border-radius: 10px;
+  border: transparent;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #131313;
+
+  padding: 12px;
+  text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    width: 145px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}

@@ -1,0 +1,108 @@
+<!-- Элементы для вызова модальных окон, могут быть любые -->
+
+<div class="modal ingredients" data-modal="2">
+  <!--   Svg иконка для закрытия окна  -->
+  <svg
+    class="modal-ingr__cross js-modal-close"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+  >
+    <use href="./images/icons.svg#icon-close-smaller"></use>
+  </svg>
+  <p class="modal-ingr__title">Chocolate icecream</p>
+  <div class="modal-ingr__thumb">
+    <img
+      class="modal-ingr__img"
+      srcset="
+        ./images/modal/ellipse_67@1x.jpg 1x,
+        ./images/modal/ellipse_67@2x.jpg 2x
+      "
+      src="/src/images/modal/ellipse_67@1x.jpg"
+      alt=""
+      width="132"
+    />
+  </div>
+  <ul class="modal-ingr__list">
+    <li class="modal-ingr__item">
+      <div class="modal-ingr__rectangle">
+        <div class="modal-ingr__box"><p class="modal-ingr__value">320</p></div>
+        <p class="modal-ingr__description">kcal</p>
+      </div>
+    </li>
+    <li class="modal-ingr__item">
+      <div class="modal-ingr__rectangle">
+        <div class="modal-ingr__box"><p class="modal-ingr__value">4g</p></div>
+        <p class="modal-ingr__description">Protein</p>
+      </div>
+    </li>
+    <li class="modal-ingr__item">
+      <div class="modal-ingr__rectangle">
+        <div class="modal-ingr__box"><p class="modal-ingr__value">8,2g</p></div>
+        <p class="modal-ingr__description">Fats</p>
+      </div>
+    </li>
+    <li class="modal-ingr__item">
+      <div class="modal-ingr__rectangle">
+        <div class="modal-ingr__box">
+          <p class="modal-ingr__value">40,4g</p>
+        </div>
+        <p class="modal-ingr__description">Carb</p>
+      </div>
+    </li>
+  </ul>
+  <p class="modal-ingr__ingredients-title">Ingredients</p>
+  <ul class="modal-ingr__ingredients-list">
+    <li class="modal-ingr__ingredients-item">
+      <span class="modal-ingr__ingredients">Milk</span>100ml
+    </li>
+    <li class="modal-ingr__ingredients-item">
+      <span class="modal-ingr__ingredients">Belgian chocolate</span>20g
+    </li>
+    <li class="modal-ingr__ingredients-item">
+      <span class="modal-ingr__ingredients">Cream</span>150 ml
+    </li>
+    <li class="modal-ingr__ingredients-item">
+      <span class="modal-ingr__ingredients">Cocoa powder</span> 30g
+    </li>
+    <li class="modal-ingr__ingredients-item">
+      <span class="modal-ingr__ingredients">Sugar</span>40g
+    </li>
+    <li class="modal-ingr__ingredients-item">
+      <span class="modal-ingr__ingredients">Vanilla sugar</span>10g
+    </li>
+  </ul>
+  <form class="modal-ingr__form" autocomplete="off">
+    <label class="modal-ingr__label"
+      ><input
+        name="modal-ingr_name"
+        class="modal-ingr__input"
+        type="text"
+        placeholder="Name"
+        required
+        pattern="^[a-zA-Z]+$"
+        title="Username must be two words separated by space."
+    /></label>
+    <label class="modal-ingr__label"
+      ><input
+        name="modal-ingr_phone"
+        class="modal-ingr__input"
+        type="tel"
+        placeholder="Phone"
+        required
+        pattern="\+?[0-9\s\-\(\)]+"
+        minlength="10"
+        maxlength="13"
+        title="Phone number must be thirteen symbols."
+    /></label>
+    <label class="modal-ingr__label-textarea">
+      <textarea
+        name="modal-ingr_comment"
+        class="modal-ingr__textarea"
+        rows="3"
+        placeholder="Comment"
+      ></textarea>
+    </label>
+    <button class="modal-ingr__btn" type="submit">Submit</button>
+  </form>
+</div>

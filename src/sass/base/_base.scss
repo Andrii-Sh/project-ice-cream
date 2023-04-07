@@ -1,0 +1,104 @@
+body {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: $classic-black;
+  cursor: $pointer-smaller;
+
+  background-color: $text-and-modal-white;
+  background-image: url(../images/background_mobile.jpg);
+  background-position: center;
+  background-size: inherit;
+  background-repeat: repeat;
+  background-attachment: fixed;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/background_mobile@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/background_tablet.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background_tablet@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/background_desktop.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background_desktop@2x.jpg);
+    }
+  }
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Класс для обнуления базовых свойств у списков (ul) */
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+/* Класс для обнуления базовых свойств у ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: $pointer;
+}
+/* Свойства для корректного отображения картинок */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Свойства для обнуления курсива у address */
+address {
+  font-style: normal;
+}
+
+.container {
+  // outline: 1px solid red;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 0 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding: 0 16px;
+  }
+}
+
+/* For smooth page scrolling */
+html {
+  scroll-behavior: smooth;
+}
